@@ -1,0 +1,165 @@
+{
+  "users": [
+    {
+      "id": "usr_root",
+      "full_name": "Técnico Kevin Flores",
+      "role_label": "Super Administrador DB",
+      "password_hash": "1234"
+    },
+    {
+      "id": "usr_dir",
+      "full_name": "Director Carlos Mendoza",
+      "role_label": "Administrador",
+      "password_hash": "1234"
+    },
+    {
+      "id": "usr_fin",
+      "full_name": "Contadora Patricia Ríos",
+      "role_label": "Contadora",
+      "password_hash": "1234"
+    },
+    {
+      "id": "usr_op1",
+      "full_name": "Operadora Melissa",
+      "role_label": "Operadora",
+      "password_hash": "1234"
+    },
+    {
+      "id": "usr_op2",
+      "full_name": "Operador Jorge Silva",
+      "role_label": "Operadora",
+      "password_hash": "1234"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "drv_001",
+      "mobile_number": "Móvil 01",
+      "name": "Juan Pérez",
+      "blood_type": "O+",
+      "license_expiry": "2027-05-20",
+      "soat_expiry": "2026-12-15",
+      "current_debt": 150.0,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Juan"
+    },
+    {
+      "id": "drv_002",
+      "mobile_number": "Móvil 02",
+      "name": "Roberto Gómez",
+      "blood_type": "A+",
+      "license_expiry": "2026-06-01",
+      "soat_expiry": "2026-05-30",
+      "current_debt": 0.0,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Roberto"
+    },
+    {
+      "id": "drv_003",
+      "mobile_number": "Móvil 05",
+      "name": "Luis Alberto Sánchez",
+      "blood_type": "B-",
+      "license_expiry": "2028-01-10",
+      "soat_expiry": "2027-01-10",
+      "current_debt": 45.5,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Luis"
+    },
+    {
+      "id": "drv_004",
+      "mobile_number": "Móvil 10",
+      "name": "Miguel Ángel Castro",
+      "blood_type": "O-",
+      "license_expiry": "2026-05-18",
+      "soat_expiry": "2026-08-22",
+      "current_debt": 320.0,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Miguel"
+    },
+    {
+      "id": "drv_005",
+      "mobile_number": "Móvil 12",
+      "name": "Fernando Torres",
+      "blood_type": "AB+",
+      "license_expiry": "2029-11-05",
+      "soat_expiry": "2026-10-31",
+      "current_debt": 0.0,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Fernando"
+    },
+    {
+      "id": "drv_006",
+      "mobile_number": "Móvil 15",
+      "name": "Mario Vargas",
+      "blood_type": "O+",
+      "license_expiry": "2025-12-01",
+      "soat_expiry": "2025-11-20",
+      "current_debt": 50.0,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Mario"
+    }
+  ],
+  "shifts": [
+    {
+      "id": "sh_001",
+      "operator_id": "usr_op1",
+      "start_time": "06:00",
+      "end_time": "14:00",
+      "total_calls": 145,
+      "canceled_calls": 12
+    },
+    {
+      "id": "sh_002",
+      "operator_id": "usr_op2",
+      "start_time": "14:00",
+      "end_time": "22:00",
+      "total_calls": 190,
+      "canceled_calls": 25
+    },
+    {
+      "id": "sh_003",
+      "operator_id": "usr_op1",
+      "start_time": "22:00",
+      "end_time": "06:00",
+      "total_calls": 85,
+      "canceled_calls": 5
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_001",
+      "driver_id": "drv_001",
+      "operator_id": "usr_op1",
+      "amount": 50.0,
+      "reason": "Pago a cuenta de saldo deudor",
+      "type": "pago",
+      "status": "aprobado"
+    },
+    {
+      "id": "tx_002",
+      "driver_id": "drv_004",
+      "operator_id": "usr_op1",
+      "amount": 100.0,
+      "reason": "Multa por atraso reiterado",
+      "type": "multa",
+      "status": "aprobado"
+    },
+    {
+      "id": "tx_003",
+      "driver_id": "drv_003",
+      "operator_id": "usr_fin",
+      "amount": 45.5,
+      "reason": "Liquidación semanal",
+      "type": "pago",
+      "status": "pendiente"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc_001",
+      "driver_id": "drv_002",
+      "type": "falta limpieza",
+      "date": "2026-05-13 08:30"
+    },
+    {
+      "id": "inc_002",
+      "driver_id": "drv_004",
+      "type": "rechazo llamada",
+      "date": "2026-05-14 02:15"
+    }
+  ]
+}
